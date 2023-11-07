@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import Editor from "./components/Editor";
+import useLocalStorage from "./components/hooks/useLocalStorage";
 
 const App = () => {
 
-    const [html, setHtml] = useState("")
-    const [css, setCss] = useState("")
-    const [js, setJs] = useState("")
-    const [srcDoc, setSrcDoc] = useState("")
+    const [html, setHtml] = useLocalStorage('html', ' ');
+    const [css, setCss] = useLocalStorage('css', ' ');
+    const [js, setJs] = useLocalStorage('js', ' ');
+    const [srcDoc, setSrcDoc] = useState('');
 
 
     // The html, css and js on every click this slow down our page so we will do it after some interval

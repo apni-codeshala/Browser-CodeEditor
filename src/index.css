@@ -57,3 +57,126 @@ body {
     font-size: 10px;
     font-weight: bolder;
 }
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #263238;
+}
+
+.menu .logo {
+    padding: .5rem .8rem;
+    font-size: 20px;
+}
+
+.menu .logo span {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.menu .logo .head-first {
+    color: greenyellow;
+}
+
+.menu .logo .head-end {
+    color: red;
+}
+
+.menu .title .title-input {
+    border: 2px solid #6e6e6e;
+    width: 400px;
+    height: 30px;
+    background-color: #263238;
+    color: #fff;
+}
+
+.menu .title h1 {
+    color: #fde3e3;
+    font-size: 18px;
+}
+
+.menu .new .header-button {
+    margin: .5rem .8rem;
+    height: 30px;
+}
+
+.works {
+    background-color: #3d3d3d;
+    min-height: 100vh;
+}
+
+.works .work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.node {
+    background: #263238;
+    width: 20rem;
+    height: 121px;
+    margin: .8rem .9rem;
+    display: flex;
+    border-radius: .5rem;
+}
+
+.node .img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background: url("./Assets/download.jpg");
+    background-size: contain;
+}
+
+.node .info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff;
+    justify-content: center;
+}
+
+.node div {
+    padding: 10px
+}
+
+.reg {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration {
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.registration input {
+    width: 30rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.registration .buttons {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration .buttons button {
+    width: 100px;
+    margin: 10px;
+    padding: .5rem;
+}
